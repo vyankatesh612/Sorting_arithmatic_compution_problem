@@ -5,4 +5,4 @@
  read -p "Enter second number :" second_num
  read -p "Enter third number :" third_num
 
- result=$((first_num*second_num+third_num))
+ result=$((third_num+first_num/second_num))
