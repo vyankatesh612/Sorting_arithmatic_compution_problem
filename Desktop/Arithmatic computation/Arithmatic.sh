@@ -1,5 +1,6 @@
 #!/bin/bash -x
  declare -A dictionary
+ declare -a array
  echo "Welcome to Arithmatic computation"
 
  read -p "Enter first number :" first_num
@@ -15,4 +16,9 @@
  dictionary[2]=$result2
  dictionary[3]=$result3
  dictionary[4]=$result4
-
+ 
+ for ((i=1;i<=4;i++))
+ do
+   array[$i]=${dictionary[${i}]}
+ done
+ 
