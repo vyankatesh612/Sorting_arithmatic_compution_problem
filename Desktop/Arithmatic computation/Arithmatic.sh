@@ -1,12 +1,12 @@
 #!/bin/bash -x
  
- function descendingsort()
+ function ascendingsort()
 	{
  		for ((i=0;i<10;i++))
  		do
    		for ((j=0;j<10;j++))
    		do
-     			if [ ${array[i]%.*} -gt ${array[j]%.*} ]
+     			if [ ${array[i]%.*} -lt ${array[j]%.*} ]
      			then
       			temp=${array[i]}
        			array[i]=${array[j]}
@@ -41,5 +41,5 @@
    array[$i]=${dictionary[${i}]}
  done
  
- descendingsort
+ ascendingsort
 
